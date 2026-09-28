@@ -1,0 +1,9 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "model-card.json": "712f1c438cacd8cc5e556e1ca0b21c3f26de2c5096e5095819d1302e89be4c43",
+    "strands.json": "499067908d857f5ba3b6765046ec5069acba1d2f6bc582ffcafd34f471a507b1"
+  },
+  "set_digest": "ae0b9dd6005c7f132eed8a68dfe8163635d57edf0f83a8c273fd14ac30d4a81e",
+  "verify": "sha256sum any file under /engine/ and compare; the set digest hashes the public file digests in the order listed. The coupling matrix, lexicon and lean map are served to pass holders by /api/export?fmt=engine."
+}

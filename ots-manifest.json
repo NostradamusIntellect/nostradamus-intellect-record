@@ -1,0 +1,35 @@
+{
+  "stampedAt": "2026-08-29T09:54:01.248Z",
+  "algorithm": "SHA-256",
+  "entries": {
+    "cal-01": "1f27008c675874fffe29683d0b73ee7a4b2fff96de71093ee38b3e07464b1257",
+    "cal-02": "323c6b383fb846f6bdb8c46b0cc0383a9ea689f46ded3c2493b1d29093c6ed81",
+    "cal-03": "cbbc771e5f06a51b447f67979afe514f9c9980e704b831fd4472a640079a76f2",
+    "cal-04": "7b044d660615c43a077795839cc65c2b49e2e593c91fec967f3d09a66b4a042b",
+    "cal-05": "026f22fa7f5ffb6aed9765e5c351767175ef1d4f25dd352d83d8277929c19d31",
+    "cal-06": "c6c81cccd938e5d7f3efc99949f8f584541841f46d1c52d5c81463a3f7143925",
+    "cal-07": "b0f9204d708d5b052b3575164aceb37a37f4e7610d7ab6c00d58cd9ae2251120",
+    "cal-08": "066c16bc507b3e7750937d8b2ca8f0dbe0bef5f27358d3b900fb160cab39face",
+    "cal-09": "5e8a7f6e08eb1e7b49fe6ac253cbe2cc3d2f650e37dbcac4e75eaca59608016e",
+    "cal-10": "61ea77dcd6cfca4b57ace93d0298fbd340f33f8ffadc173be648cb8029bf67e2",
+    "cal-11": "7c59dc539240cfdd0b54e3093649becf166158ca0f16f033ea3832873d0ea8f5",
+    "cal-12": "4aa026b84db7110e0c0810b7971b99095a8c83643c3046da290d5c65409a0246",
+    "cal-13": "4df1a8cec6f229e4bbd04361e5194673398c245814e7fb9cb01954bd1b377674",
+    "cal-14": "8e1ffa6c051a85fcfbf69556d8498fbb91bf2ba91523dcf58ce2778dd30c1353",
+    "cal-15": "ca48e48e414c2e4c3d8519d6ff1eef8f36006ecc9b1beab8ffc7bf08ef8102bc",
+    "cal-16": "58dfd99872493566290fed75d6affb90f311c55706d8a6b8b3593207c43a5f2d"
+  },
+  "ledgerRoot": "adbe641961a8fa194fe22e3063f57362df8bd3e959a0e327f2e4b7b39c570ff8",
+  "documents": {
+    "first-scorecard": {
+      "sha256": "e8d3601a1b7c46b646700c0c48d8d46b3859c83b2084bd9c6bf52f7311ea048f",
+      "stampedAt": "2026-09-06T12:33:13.303Z",
+      "ots": "first-scorecard.ots"
+    },
+    "resolution-procedure": {
+      "sha256": "44db1665e3b0529b12a36cb55cae035d99ac77a83306111fe0716316eb15a2ae",
+      "stampedAt": "2026-09-06T12:33:14.303Z",
+      "ots": "resolution-procedure.ots"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Nostradamus Intellect — engine model card",
+  "engine": "deterministic linear state-space over 36 named strands",
+  "engine_version": 2,
+  "engine_versions": [
+    {
+      "v": 1,
+      "from": "2026-07-03",
+      "name": "One headline, one impulse",
+      "note": "Every headline matching a lexicon rule applied that rule at full strength, and impulses accumulated. The same story carried by eight wires therefore pushed a strand eight times: wire duplication was read as world intensity."
+    },
+    {
+      "v": 2,
+      "from": "2026-09-06",
+      "name": "Confirmation weighting and the diurnal slot",
+      "note": "Headlines are grouped into stories first; a story applies its impulse ONCE, scaled by how many independent wires carried it. A single-source story keeps half its weight, three or more wires restore full weight. Each step also carries a diurnal factor for the publication rhythm of its six-hour slot — declared here, held at 1.000 in every slot until the archive is long enough to measure it honestly."
+    }
+  ],
+  "version_rule": "A tick is replayed under the version that governed its timestamp. Sealed probabilities are static data the engine cannot address and do not change when the engine does.",
+  "confirmation": {
+    "BASE": 0.5,
+    "FULL_AT": 3,
+    "JACCARD": 0.4,
+    "MIN_SHARED": 2,
+    "formula": "w = BASE + (1 − BASE) · min(1, (wires − 1) / (FULL_AT − 1)); applied once per story, not once per headline",
+    "note": "From engine v2. Headlines are clustered into stories by token overlap; the first member that matches a lexicon rule supplies the impulse, every member supplies confirmation. Rules matching inside one headline still accumulate."
+  },
+  "diurnal": {
+    "measuredOn": null,
+    "status": "MEASURING — profile held neutral until the archive covers 60 days",
+    "slotHours": 6,
+    "labels": [
+      "WEEKDAY 00-06Z",
+      "WEEKDAY 06-12Z",
+      "WEEKDAY 12-18Z",
+      "WEEKDAY 18-24Z",
+      "WEEKEND 00-06Z",
+      "WEEKEND 06-12Z",
+      "WEEKEND 12-18Z",
+      "WEEKEND 18-24Z"
+    ],
+    "relativeVolume": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "floor": 0.7,
+    "ceiling": 1.4,
+    "formula": "factor = clamp(1 / relativeVolume[slot], floor, ceiling); slot = floor(UTC hour / 6) + (weekend ? 4 : 0)"
+  },
+  "constants": {
+    "DIAG": 0.99,
+    "COUPLING_SCALE": 0.1,
+    "STEP_CAP": 0.15,
+    "CLAMP": 1,
+    "STEP_HOURS": 6,
+    "MAX_CATCHUP_STEPS": 28,
+    "SIGNIFICANT_TRANSITION": 0.06,
+    "STATE_QUANTUM": 0.001
+  },
+  "advance_formula": "s'[i] = clamp( round1000( clampStep( DIAG*s[i] + COUPLING_SCALE*Σ(w*s[from]) + Σ(impulse) ) ) ); clampStep caps |s'-s| at STEP_CAP; clamp bounds to ±CLAMP; round1000 quantizes to 0.001",
+  "membrane_rule": "A failure of the machinery never becomes the state. Every step is checked against the published rule before it is saved — all 36 strands present and finite, none outside ±CLAMP, none moved more than STEP_CAP (plus the 0.001 quantum) — and a step that fails is refused: nothing is written, the last good state stands, the refusal is recorded. A store fault is answered as unreachable and never read as \"no state yet\"; a document the store positively lacks is rebuilt from the archive and labelled a restore. Added 2026-09-27 after the 2026-09-24 re-seed.",
+  "news_rule": "Wire impulses are applied only on the FIRST step of a catch-up batch. From engine v2 they are applied once per STORY rather than once per headline, scaled by the confirmation weight below and by the diurnal factor of the step; see engine_versions for what governed any given tick.",
+  "live_lean": {
+    "SCALE": 12,
+    "CAP": 7,
+    "formula": "live = seal + clamp( round( Σ w_k * (strand_k − base_k) * SCALE ), −CAP, +CAP )",
+    "note": "The sealed probability never moves. SCALE converts strand points to probability points; CAP bounds the lean to ±7. The uncapped raw value is recorded from v1.2 for a later nowcast score, but is never displayed as the number.",
+    "baseline": "base_k is the Loom’s documented seed for every entry sealed before the Loom existed. An entry sealed afterwards is leaned from the strands as they stood when it was sealed (LEAN_BASE in src/lib/liveLean.js: the readings and the Loom version they were taken at), so drift it had already priced in never shows as movement. Added 2026-09-28 with ZUC-01.",
+    "sealed_after_seed": 1
+  },
+  "vitality_weights": {
+    "coherence": 0.3,
+    "stability": 0.25,
+    "steerability": 0.25,
+    "robustness": 0.2
+  },
+  "vitals_thresholds": {
+    "vitality": 0.45,
+    "expansion": 0.35,
+    "stepDriftBp": 50,
+    "steerability": 0.5,
+    "lyapunov": 0.05,
+    "normJump": 0.3
+  },
+  "attention_guarantee": "Attention (Lattice HEAT) is never an input to any probability: src/lib/liveLean.js imports only THREADS and SEED_STATE from the state engine and nothing from the attention graph.",
+  "source_of_truth": "src/lib/coreDynamics.js and src/lib/liveLean.js — one copy, imported by both the API and the browser bundle; these files are generated from them at build.",
+  "access": "PUBLIC: this card, the 36 strands with seeds, the full 24-edge coupling matrix with rationale (rendered on /core and /engine), checksums, OpenTimestamps proofs, the replay verdict, and each prediction’s own lean loadings on its page. INSTRUMENT / FOUNDER PASS: the complete 46-rule lexicon, the lean map as one file, the tick-by-tick replay table, and the digestion map beyond 24 hours — on /engine, the desk, and via /api/export?fmt=engine."
+}

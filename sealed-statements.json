@@ -1,0 +1,259 @@
+{
+  "contract": {
+    "sealed": "A sealed probability is never rewritten. Corrections are dated addenda.",
+    "same_number": "Free and paid readers see the same probability on the same card.",
+    "misses": "Misses are published at the same size as hits.",
+    "not_advice": "Nothing here is financial, medical, legal or safety advice. Forward-looking content is probabilistic simulation.",
+    "graded": "0 of 16 ledger seals graded as of this build. First public verdict: 2027-02-28."
+  },
+  "statements": [
+    {
+      "id": "elon-musk-superhuman-digital-ai-by-end-of-2027",
+      "code": "ELN-01",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Superhuman performance across all digital work by the end of 2027",
+      "speaker": "Elon Musk",
+      "quote": "AI will be able to do anything digital (that doesn’t require shaping atoms) at a superhuman level by the end of next year",
+      "said_on": "2026-08-31",
+      "venue": "X",
+      "receipts": [
+        {
+          "label": "Original post",
+          "url": "https://x.com/elonmusk/status/2094242307511853196"
+        }
+      ],
+      "restated": null,
+      "probability": 4,
+      "confidence": 68,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2027-12-31",
+      "resolution_criteria": "CORRECT if, on or before 2027-12-31, a credible independent evaluation — METR, a major multi-lab benchmark consortium, or concurring published evaluations from at least three of OpenAI, Anthropic, Google DeepMind and xAI — documents frontier AI exceeding expert-human performance on a broad suite of purely digital professional tasks spanning at least five distinct domains, with no evaluated domain in which median domain experts still outperform. Domain-specific superhuman performance does not resolve this CORRECT: \"anything digital\" is read as broad generality, which is the plain meaning of the sentence.",
+      "falsifiability": "any substantial category of digital professional work — novel research, long-horizon software architecture, legal drafting under adversarial review, original strategic analysis — still shows median human experts outperforming the best publicly available frontier system on published evaluations at 2027-12-31.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-superhuman-digital-ai-by-end-of-2027"
+    },
+    {
+      "id": "elon-musk-optimus-sold-to-the-public-by-end-of-2027",
+      "code": "ELN-02",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Tesla sells humanoid robots to the general public by the end of 2027",
+      "speaker": "Elon Musk",
+      "quote": "Probably later this year, by the end of this year, I think they’ll be doing more complex tasks and still deployed in an industrial environment. By the end of next year, I think we’ll be selling humanoid robots to the public. That’s when we’re confident that it’s very high reliability, very high safety, and the range of functionality is also very high. You can basically ask it to do anything you’d like.",
+      "said_on": "2026-01-22",
+      "venue": "World Economic Forum, Davos — in conversation with Larry Fink",
+      "receipts": [
+        {
+          "label": "Report of the quote",
+          "url": "https://x.com/Teslarati/status/2014378659855876432"
+        },
+        {
+          "label": "Davos session video",
+          "url": "https://www.youtube.com/watch?v=oQjTKMgh2J8"
+        },
+        {
+          "label": "C-SPAN recording",
+          "url": "https://archive.org/details/CSPAN3_20260212_052600_Elon_Musk_on_AI_Development_at_2026_World_Economic_Forum"
+        }
+      ],
+      "restated": null,
+      "probability": 26,
+      "confidence": 58,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2027-12-31",
+      "resolution_criteria": "CORRECT if, on or before 2027-12-31, Tesla makes a humanoid robot available for purchase by non-enterprise members of the general public in at least one jurisdiction, with orders accepted and at least one unit delivered to a retail buyer. Deliberately steelmanned: a limited release, a waitlist that actually ships, or a very high price do NOT prevent this resolving CORRECT. Deployment confined to Tesla facilities, enterprise partners or employees does not count — the statement says \"to the public\".",
+      "falsifiability": "at 2027-12-31 no member of the general public can order and take delivery of a Tesla humanoid robot, including where the programme is live but restricted to industrial or enterprise customers.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-optimus-sold-to-the-public-by-end-of-2027"
+    },
+    {
+      "id": "elon-musk-unsupervised-fsd-on-customer-cars-by-q4-2026",
+      "code": "ELN-03",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Unsupervised Full Self-Driving reaches customer-owned Teslas in Q4 2026",
+      "speaker": "Elon Musk",
+      "quote": "I’m just guessing here, but probably in the fourth quarter.",
+      "said_on": "2026-04-22",
+      "venue": "Tesla Q1 2026 earnings call — answering when unsupervised FSD reaches customer cars",
+      "receipts": [
+        {
+          "label": "Earnings call video",
+          "url": "https://www.youtube.com/watch?v=0-lkuESRj2A"
+        },
+        {
+          "label": "Electrek writeup with the line",
+          "url": "https://electrek.co/2026/04/22/tesla-elon-musk-unsupervised-fsd-consumer-cars-q4-delay-again/"
+        }
+      ],
+      "restated": null,
+      "probability": 12,
+      "confidence": 71,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2026-12-31",
+      "resolution_criteria": "CORRECT if, on or before 2026-12-31, Tesla enables unsupervised operation — no requirement for the driver to monitor the roadway or be prepared to intervene — on customer-owned vehicles in at least one publicly available software release in at least one jurisdiction. Steelmanned: a geofenced release, a limited early-access cohort, or a single US state all resolve this CORRECT. Tesla-operated robotaxi fleets do NOT count; the question asked and answered was specifically about customer cars.",
+      "falsifiability": "at 2026-12-31 every customer-owned Tesla still requires an attentive driver under the terms of the released software, including where a Tesla-operated driverless fleet runs in parallel.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-unsupervised-fsd-on-customer-cars-by-q4-2026"
+    },
+    {
+      "id": "elon-musk-robotaxi-very-widespread-in-the-us-by-end-of-2026",
+      "code": "ELN-04",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Tesla robotaxi service becomes very widespread across the United States by end-2026",
+      "speaker": "Elon Musk",
+      "quote": "I think self-driving cars is essentially a solved problem at this point. And Tesla has rolled out robotaxi service in a few cities and will be very, very widespread by the end of this year within the U.S.",
+      "said_on": "2026-01-22",
+      "venue": "World Economic Forum, Davos",
+      "receipts": [
+        {
+          "label": "CNBC on the Davos line",
+          "url": "https://www.cnbc.com/2026/01/22/musk-tesla-robotaxis-us-expansion.html"
+        },
+        {
+          "label": "Davos session video",
+          "url": "https://www.youtube.com/watch?v=oQjTKMgh2J8"
+        },
+        {
+          "label": "Restatement, May 2026",
+          "url": "https://electrek.co/2026/05/18/musk-unsupervised-fsd-widespread-us-end-of-year-smart-mobility-summit/"
+        }
+      ],
+      "restated": {
+        "date": "2026-05-18",
+        "venue": "Smart Mobility Summit",
+        "quote": "We already have some vehicles operating with no people inside and no safety monitors in three cities in Texas and we probably will be widespread in the U.S. by the end of this year."
+      },
+      "probability": 8,
+      "confidence": 74,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2026-12-31",
+      "resolution_criteria": "\"Very widespread\" is vague, so it is operationalised toward the generous reading: CORRECT if, on or before 2026-12-31, Tesla robotaxi service is available to the general public — not an invite-only tester cohort — in at least 25 US metropolitan areas. Twenty-five is chosen as approximately the threshold at which a US consumer service is ordinarily described as widespread rather than regional; a literal reading of \"very, very widespread\" would demand considerably more.",
+      "falsifiability": "at 2026-12-31 public Tesla robotaxi service operates in fewer than 25 US metros, including where the service is excellent in the metros it does cover.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-robotaxi-very-widespread-in-the-us-by-end-of-2026"
+    },
+    {
+      "id": "elon-musk-starship-mars-lander-by-2031",
+      "code": "ELN-05",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "An uncrewed SpaceX vehicle soft-lands intact on Mars by 2031",
+      "speaker": "Elon Musk",
+      "quote": "Mars lander a few years sooner.",
+      "said_on": "2026-07-29",
+      "venue": "X — posted directly beneath the crewed-Mars line",
+      "receipts": [
+        {
+          "label": "Original post",
+          "url": "https://x.com/elonmusk/status/2082347505099128899"
+        }
+      ],
+      "restated": null,
+      "probability": 20,
+      "confidence": 55,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2031-12-31",
+      "resolution_criteria": "The statement is relative — \"a few years sooner\" than people on Mars in 5 to 7 years — so it is read as roughly 2 to 4 years out and resolved on the generous end of that window. CORRECT if, on or before 2031-12-31, a SpaceX vehicle achieves a controlled soft landing on the Martian surface with the vehicle surviving touchdown in a recoverable state, confirmed by SpaceX and corroborated by independent tracking or NASA. A hard impact, or a landing that destroys the vehicle, does not resolve this CORRECT.",
+      "falsifiability": "no SpaceX vehicle has soft-landed intact on Mars by 2031-12-31, including where one has launched and is in transit or in Mars orbit at that date.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-starship-mars-lander-by-2031"
+    },
+    {
+      "id": "elon-musk-people-on-mars-in-5-to-7-years",
+      "code": "ELN-06",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "A human being lands on Mars by 2033",
+      "speaker": "Elon Musk",
+      "quote": "People on Mars in roughly 5 to 7 years.",
+      "said_on": "2026-07-29",
+      "venue": "X",
+      "receipts": [
+        {
+          "label": "Original post",
+          "url": "https://x.com/elonmusk/status/2082347505099128899"
+        }
+      ],
+      "restated": null,
+      "probability": 3,
+      "confidence": 76,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2033-12-31",
+      "resolution_criteria": "Read on the generous end of the speaker’s own range: CORRECT if at least one living human being has landed on the surface of Mars on or before 2033-12-31, confirmed by the operating organisation and corroborated by independent tracking. A one-way or non-return mission counts. Crew in Mars orbit without a surface landing does not.",
+      "falsifiability": "no human has set foot on Mars by 2033-12-31, including where a crewed vehicle is en route or in Mars orbit at that date.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-people-on-mars-in-5-to-7-years"
+    },
+    {
+      "id": "elon-musk-100-million-humanoid-robots-by-2031",
+      "code": "ELN-07",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Cumulative humanoid robot production reaches 100 million units by 2031",
+      "speaker": "Elon Musk",
+      "quote": "So five years being say 2031… digital intelligence will exceed the sum of all human intelligence… that there will be in 5 years, let’s say at least 100 million humanoid robots, but maybe a billion.",
+      "said_on": "2026-05-19",
+      "venue": "Forbes interview",
+      "receipts": [
+        {
+          "label": "Short clip of the quote",
+          "url": "https://www.youtube.com/watch?v=3PTCFgmUVaE"
+        },
+        {
+          "label": "Fuller Forbes interview",
+          "url": "https://www.youtube.com/watch?v=adgbH9FixW0"
+        }
+      ],
+      "restated": null,
+      "probability": 3,
+      "confidence": 79,
+      "sealed_on": "2026-08-31",
+      "resolve_by": "2031-12-31",
+      "resolution_criteria": "CORRECT if, on or before 2031-12-31, cumulative humanoid robots produced worldwide reach at least 100 million units, per published tallies from IDC, TrendForce, Omdia or an equivalent industry tracker. Steelmanned on two axes: the lower bound of the speaker’s own range is used rather than the billion figure, and CUMULATIVE production counts rather than annual shipments or active installed base.",
+      "falsifiability": "cumulative worldwide humanoid production stands below 100 million units at 2031-12-31.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/elon-musk-100-million-humanoid-robots-by-2031"
+    },
+    {
+      "id": "mark-zuckerberg-personal-ai-agent-prediction-by-2031",
+      "code": "ZUC-01",
+      "kind": "sealed-statement",
+      "scored": true,
+      "title": "Billions of people have a personal AI agent working on their behalf by 2031",
+      "speaker": "Mark Zuckerberg",
+      "quote": "I think that it’s extremely unlikely if you look out five years from now, for example — whatever period of time you want — that you don’t have billions of people with a personal agent that understands your goals and that is just working on your behalf 24/7 to achieve your goals in whatever the domain is that you care about.",
+      "said_on": "2026-07-29",
+      "venue": "Meta Q2 2026 earnings call",
+      "receipts": [
+        {
+          "label": "TechCrunch on the earnings-call line",
+          "url": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/"
+        },
+        {
+          "label": "The Jacklyn Dallas interview (video)",
+          "url": "https://www.youtube.com/watch?v=2cg56uF4hlc"
+        },
+        {
+          "label": "Interview write-up, 2026-09-24",
+          "url": "https://thenewthings.com/p/exclusive-mark-zuckerberg-interview"
+        }
+      ],
+      "restated": {
+        "date": "2026-09-24",
+        "venue": "Interview with Jacklyn Dallas",
+        "quote": "Everyone is going to have an agent that really intimately understands your goals and everything around you and can help you get stuff done."
+      },
+      "probability": 27,
+      "confidence": 62,
+      "sealed_on": "2026-09-28",
+      "resolve_by": "2031-12-31",
+      "resolution_criteria": "CORRECT if, on or before 2031-12-31, it is documented that at least two billion people worldwide use a personal AI agent at least monthly — an AI that keeps a persistent memory of the user’s goals and takes actions on their behalf (sending messages, booking, buying, paying, scheduling or managing accounts) rather than only answering questions or generating content. Documented means either (a) a single provider — Meta, Google, Apple, OpenAI, Microsoft or any other — publicly reports at least two billion monthly users of such an agent, with the metric defined as action-taking use, or (b) independent measurement (Pew Research, Gallup World Poll, Reuters Institute, GSMA, ITU or equivalent) supports at least two billion such users. Steelmanned on three axes: \"billions\" is read at its lowest value, two billion; monthly use counts as having one; and any provider’s agent counts, not only Meta’s. A monthly-user figure for a chat assistant does not resolve this CORRECT unless the provider states that it counts action-taking use.",
+      "falsifiability": "no provider reports two billion monthly users of an action-taking personal agent, and no independent measurement supports two billion such users worldwide, by 2031-12-31.",
+      "status": "PENDING",
+      "url": "https://nostradamusintellect.com/predictions/mark-zuckerberg-personal-ai-agent-prediction-by-2031"
+    }
+  ]
+}
