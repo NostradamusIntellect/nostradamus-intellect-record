@@ -26,7 +26,7 @@ anchor. If a number on the site ever differed from the one committed here, anyon
 ## Verify it
 
 ```bash
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp verify all
+npx -y nostradamus-intellect verify all
 ```
 
 or with [`verify.mjs`](https://github.com/NostradamusIntellect/nostradamus-intellect-protocol/blob/main/verify.mjs) from
